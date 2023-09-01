@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52C25E6F2AA22B7B00B052CE /* UnivStore_OneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C25E6E2AA22B7B00B052CE /* UnivStore_OneApp.swift */; };
+		52C25E712AA22B7B00B052CE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C25E702AA22B7B00B052CE /* ContentView.swift */; };
+		52C25E732AA22B7C00B052CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52C25E722AA22B7C00B052CE /* Assets.xcassets */; };
+		52C25E762AA22B7C00B052CE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52C25E752AA22B7C00B052CE /* Preview Assets.xcassets */; };
+		52C25E802AA22B7C00B052CE /* UnivStore_OneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C25E7F2AA22B7C00B052CE /* UnivStore_OneTests.swift */; };
+		52C25E8A2AA22B7C00B052CE /* UnivStore_OneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C25E892AA22B7C00B052CE /* UnivStore_OneUITests.swift */; };
+		52C25E8C2AA22B7C00B052CE /* UnivStore_OneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C25E8B2AA22B7C00B052CE /* UnivStore_OneUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52C25E7C2AA22B7C00B052CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52C25E632AA22B7B00B052CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52C25E6A2AA22B7B00B052CE;
+			remoteInfo = UnivStore_One;
+		};
+		52C25E862AA22B7C00B052CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52C25E632AA22B7B00B052CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52C25E6A2AA22B7B00B052CE;
+			remoteInfo = UnivStore_One;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		52C25E6B2AA22B7B00B052CE /* UnivStore_One.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnivStore_One.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52C25E6E2AA22B7B00B052CE /* UnivStore_OneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnivStore_OneApp.swift; sourceTree = "<group>"; };
+		52C25E702AA22B7B00B052CE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		52C25E722AA22B7C00B052CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52C25E752AA22B7C00B052CE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		52C25E7B2AA22B7C00B052CE /* UnivStore_OneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnivStore_OneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52C25E7F2AA22B7C00B052CE /* UnivStore_OneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnivStore_OneTests.swift; sourceTree = "<group>"; };
+		52C25E852AA22B7C00B052CE /* UnivStore_OneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnivStore_OneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52C25E892AA22B7C00B052CE /* UnivStore_OneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnivStore_OneUITests.swift; sourceTree = "<group>"; };
+		52C25E8B2AA22B7C00B052CE /* UnivStore_OneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnivStore_OneUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52C25E682AA22B7B00B052CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52C25E782AA22B7C00B052CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52C25E822AA22B7C00B052CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52C25E622AA22B7B00B052CE = {
+			isa = PBXGroup;
+			children = (
+				52C25E6D2AA22B7B00B052CE /* UnivStore_One */,
+				52C25E7E2AA22B7C00B052CE /* UnivStore_OneTests */,
+				52C25E882AA22B7C00B052CE /* UnivStore_OneUITests */,
+				52C25E6C2AA22B7B00B052CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52C25E6C2AA22B7B00B052CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52C25E6B2AA22B7B00B052CE /* UnivStore_One.app */,
+				52C25E7B2AA22B7C00B052CE /* UnivStore_OneTests.xctest */,
+				52C25E852AA22B7C00B052CE /* UnivStore_OneUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52C25E6D2AA22B7B00B052CE /* UnivStore_One */ = {
+			isa = PBXGroup;
+			children = (
+				52C25E6E2AA22B7B00B052CE /* UnivStore_OneApp.swift */,
+				52C25E702AA22B7B00B052CE /* ContentView.swift */,
+				52C25E722AA22B7C00B052CE /* Assets.xcassets */,
+				52C25E742AA22B7C00B052CE /* Preview Content */,
+			);
+			path = UnivStore_One;
+			sourceTree = "<group>";
+		};
+		52C25E742AA22B7C00B052CE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				52C25E752AA22B7C00B052CE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		52C25E7E2AA22B7C00B052CE /* UnivStore_OneTests */ = {
+			isa = PBXGroup;
+			children = (
+				52C25E7F2AA22B7C00B052CE /* UnivStore_OneTests.swift */,
+			);
+			path = UnivStore_OneTests;
+			sourceTree = "<group>";
+		};
+		52C25E882AA22B7C00B052CE /* UnivStore_OneUITests */ = {
+			isa = PBXGroup;
+			children = (
+				52C25E892AA22B7C00B052CE /* UnivStore_OneUITests.swift */,
+				52C25E8B2AA22B7C00B052CE /* UnivStore_OneUITestsLaunchTests.swift */,
+			);
+			path = UnivStore_OneUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52C25E6A2AA22B7B00B052CE /* UnivStore_One */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52C25E8F2AA22B7C00B052CE /* Build configuration list for PBXNativeTarget "UnivStore_One" */;
+			buildPhases = (
+				52C25E672AA22B7B00B052CE /* Sources */,
+				52C25E682AA22B7B00B052CE /* Frameworks */,
+				52C25E692AA22B7B00B052CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnivStore_One;
+			productName = UnivStore_One;
+			productReference = 52C25E6B2AA22B7B00B052CE /* UnivStore_One.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52C25E7A2AA22B7C00B052CE /* UnivStore_OneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52C25E922AA22B7C00B052CE /* Build configuration list for PBXNativeTarget "UnivStore_OneTests" */;
+			buildPhases = (
+				52C25E772AA22B7C00B052CE /* Sources */,
+				52C25E782AA22B7C00B052CE /* Frameworks */,
+				52C25E792AA22B7C00B052CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52C25E7D2AA22B7C00B052CE /* PBXTargetDependency */,
+			);
+			name = UnivStore_OneTests;
+			productName = UnivStore_OneTests;
+			productReference = 52C25E7B2AA22B7C00B052CE /* UnivStore_OneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		52C25E842AA22B7C00B052CE /* UnivStore_OneUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52C25E952AA22B7C00B052CE /* Build configuration list for PBXNativeTarget "UnivStore_OneUITests" */;
+			buildPhases = (
+				52C25E812AA22B7C00B052CE /* Sources */,
+				52C25E822AA22B7C00B052CE /* Frameworks */,
+				52C25E832AA22B7C00B052CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52C25E872AA22B7C00B052CE /* PBXTargetDependency */,
+			);
+			name = UnivStore_OneUITests;
+			productName = UnivStore_OneUITests;
+			productReference = 52C25E852AA22B7C00B052CE /* UnivStore_OneUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52C25E632AA22B7B00B052CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					52C25E6A2AA22B7B00B052CE = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					52C25E7A2AA22B7C00B052CE = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 52C25E6A2AA22B7B00B052CE;
+					};
+					52C25E842AA22B7C00B052CE = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 52C25E6A2AA22B7B00B052CE;
+					};
+				};
+			};
+			buildConfigurationList = 52C25E662AA22B7B00B052CE /* Build configuration list for PBXProject "UnivStore_One" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52C25E622AA22B7B00B052CE;
+			productRefGroup = 52C25E6C2AA22B7B00B052CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52C25E6A2AA22B7B00B052CE /* UnivStore_One */,
+				52C25E7A2AA22B7C00B052CE /* UnivStore_OneTests */,
+				52C25E842AA22B7C00B052CE /* UnivStore_OneUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52C25E692AA22B7B00B052CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52C25E762AA22B7C00B052CE /* Preview Assets.xcassets in Resources */,
+				52C25E732AA22B7C00B052CE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52C25E792AA22B7C00B052CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52C25E832AA22B7C00B052CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52C25E672AA22B7B00B052CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52C25E712AA22B7B00B052CE /* ContentView.swift in Sources */,
+				52C25E6F2AA22B7B00B052CE /* UnivStore_OneApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52C25E772AA22B7C00B052CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52C25E802AA22B7C00B052CE /* UnivStore_OneTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52C25E812AA22B7C00B052CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52C25E8A2AA22B7C00B052CE /* UnivStore_OneUITests.swift in Sources */,
+				52C25E8C2AA22B7C00B052CE /* UnivStore_OneUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52C25E7D2AA22B7C00B052CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52C25E6A2AA22B7B00B052CE /* UnivStore_One */;
+			targetProxy = 52C25E7C2AA22B7C00B052CE /* PBXContainerItemProxy */;
+		};
+		52C25E872AA22B7C00B052CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52C25E6A2AA22B7B00B052CE /* UnivStore_One */;
+			targetProxy = 52C25E862AA22B7C00B052CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		52C25E8D2AA22B7C00B052CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		52C25E8E2AA22B7C00B052CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52C25E902AA22B7C00B052CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"UnivStore_One/Preview Content\"";
+				DEVELOPMENT_TEAM = 52NJ98457L;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.kngmin.public.UnivStore-One";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52C25E912AA22B7C00B052CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"UnivStore_One/Preview Content\"";
+				DEVELOPMENT_TEAM = 52NJ98457L;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.kngmin.public.UnivStore-One";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		52C25E932AA22B7C00B052CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 52NJ98457L;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.kngmin.public.UnivStore-OneTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UnivStore_One.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UnivStore_One";
+			};
+			name = Debug;
+		};
+		52C25E942AA22B7C00B052CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 52NJ98457L;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.kngmin.public.UnivStore-OneTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UnivStore_One.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UnivStore_One";
+			};
+			name = Release;
+		};
+		52C25E962AA22B7C00B052CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 52NJ98457L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.kngmin.public.UnivStore-OneUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UnivStore_One;
+			};
+			name = Debug;
+		};
+		52C25E972AA22B7C00B052CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 52NJ98457L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.kngmin.public.UnivStore-OneUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UnivStore_One;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52C25E662AA22B7B00B052CE /* Build configuration list for PBXProject "UnivStore_One" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52C25E8D2AA22B7C00B052CE /* Debug */,
+				52C25E8E2AA22B7C00B052CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52C25E8F2AA22B7C00B052CE /* Build configuration list for PBXNativeTarget "UnivStore_One" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52C25E902AA22B7C00B052CE /* Debug */,
+				52C25E912AA22B7C00B052CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52C25E922AA22B7C00B052CE /* Build configuration list for PBXNativeTarget "UnivStore_OneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52C25E932AA22B7C00B052CE /* Debug */,
+				52C25E942AA22B7C00B052CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52C25E952AA22B7C00B052CE /* Build configuration list for PBXNativeTarget "UnivStore_OneUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52C25E962AA22B7C00B052CE /* Debug */,
+				52C25E972AA22B7C00B052CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52C25E632AA22B7B00B052CE /* Project object */;
+}
