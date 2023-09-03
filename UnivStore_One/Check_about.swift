@@ -12,7 +12,7 @@ struct Check_about: View {
     let phoneNumber = "010-1234-5678" // 유니데이즈 전화번호
     let phoneNumber2 = "02-6352-9331" // 학생복지스토어 전화번호
     
-    @State private var isShowingPhoneAlert = false
+    @State private var isShowingPhoneAlert = false // 유니데이즈 기능 구현 보류
     @State private var isShowingPhoneAlert2 = false
     
     var body: some View {
@@ -25,6 +25,7 @@ struct Check_about: View {
             Text("전화를 통해 해결해보세요.")
                 .padding(.bottom, 100)
             
+            // 학생복지스토어 고객센터 연결
             Button(action: {
                             isShowingPhoneAlert2 = true
                         }) {
