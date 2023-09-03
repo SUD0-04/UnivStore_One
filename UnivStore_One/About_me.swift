@@ -8,26 +8,35 @@
 import SwiftUI
 
 struct About_me: View {
+
     var body: some View {
         VStack {
             Text("About")
                 .fontWeight(.bold)
                 .font(.largeTitle)
-            Text("개발중인 버전입니다.") // 소프트웨어 버전
-                .font(.body)
-// 개발자 정보 표시 기능 비활성화
-//            Image("Developer_icon") // 개발자 아이콘
-//                .resizable()
-//                .aspectRatio(contentMode: .fit) // 원본 비율 유지
-//                .frame(width: 300) // 너비만 지정. 높이는 자동으로 계산됩니다.
             
-            Text("본 앱은 스토어 편의 사용을 위해 개발되었습니다.\n구매 관련 문제 해결은 각 스토어에 문의하시기 바랍니다.") // 주의사항 안내
+            Text("1.0") // 소프트웨어 버전
+                .font(.body)
+            
+            NavigationLink(destination: Check_about()) {
+                Text("구매 관련 문의")
+                    .fontWeight(.bold)
+                    .padding(.horizontal, 22)
+                    .padding(.vertical, 12)
+                    .background(Color(red: 0.066, green: 0.251, blue: 0.828))
+                    .foregroundColor(Color.white)
+                    .cornerRadius(20)
+                    .font(.system(size: 20))
+            }.padding(30)
+            
+            Text("본 앱은 스토어 편의 사용을 위해 개발되었습니다. \n 구매 관련 문제 해결은 각 스토어에 문의하시기 바랍니다.") // 주의사항 안내
                 .font(.caption)
                 .multilineTextAlignment(.center)
-                .padding(.top, 500)
+                .padding(.top, 470)
         }
     }
 }
+
 
 struct About_me_Previews: PreviewProvider {
     static var previews: some View {
