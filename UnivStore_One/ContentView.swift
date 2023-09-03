@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var webViewNavigation1 = WebViewNavigation()
+    @ObservedObject var webViewNavigation2 = WebViewNavigation()
+
     var body: some View {
         NavigationView {
             VStack {
@@ -30,8 +33,39 @@ struct ContentView: View {
                     .aspectRatio(contentMode: .fit) // 원본 비율 유지
                     .frame(width: 350) // 너비만 지정. 높이는 자동으로 계산됩니다.
                     .padding(.bottom,250)
+
                 HStack {
-                    NavigationLink(destination: WebView(URLtoLoad: "https://www.myunidays.com/KR/ko-KR/account/log-in").edgesIgnoringSafeArea(.all)){
+                    NavigationLink(destination:
+                        ZStack{
+                            WebView(navigationState: webViewNavigation1, urlToLoad:"https://www.myunidays.com/KR/ko-KR/account/log-in").edgesIgnoringSafeArea(.all)
+                            
+                            VStack{
+                                Spacer()
+
+                                HStack{
+                                    Button(action:{
+                                        self.webViewNavigation1.webView?.goBack()
+                                    }){
+                                        Image(systemName:"chevron.left.circle")
+                                            .resizable()
+                                            .frame(width: 30, height: 30)
+                                     }
+                                     .disabled(!webViewNavigation1.canGoBack)
+
+                                    Spacer()
+
+                                    Button(action:{
+                                        self.webViewNavigation1.webView?.goForward()
+                                    }){
+                                        Image(systemName:"chevron.right.circle")
+                                            .resizable()
+                                            .frame(width: 30, height: 30)
+                                     }
+                                     .disabled(!webViewNavigation1.canGoForward)
+                                }.padding()
+                            }
+                        }
+                    ){
                         Text("유니데이즈")
                             .fontWeight(.bold)
                             .padding(15)
@@ -40,29 +74,61 @@ struct ContentView: View {
                             .cornerRadius(20)
                             .font(.system(size: 20))
                     }
-                    
-                    NavigationLink(destination: WebView(URLtoLoad: "https://www.univstore.com")
-                        .edgesIgnoringSafeArea(.bottom)) {
-                        Text("학생복지스토어")
-                                .fontWeight(.bold)
-                                .padding(15)
-                                .background(Color(red: 0.066, green: 0.251, blue: 0.828))
-                                .foregroundColor(Color.white)
-                                .cornerRadius(20)
-                                .font(.system(size: 20))
-                    }
-                    
-                    
-                    
-                    
-                }
-            }
-        }
-    }
-}
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+                    NavigationLink(destination:
+                        ZStack{
+                        WebView(navigationState:self.webViewNavigation2,urlToLoad:"https://www.univstore.com").edgesIgnoringSafeArea(.bottom)
+
+                           VStack{
+                               Spacer()
+
+                               HStack{
+                                   Button(action:{
+                                       self.webViewNavigation2.webView?.goBack()
+                                   }){
+                                       Image(systemName:"chevron.left.circle")
+                                           .resizable()
+                                           .frame(width: 30, height: 30)
+                                   }
+                                   .disabled(!webViewNavigation2.canGoBack)
+
+                                   Spacer()
+
+                                   Button(action:{
+                                       self.webViewNavigation2.webView?.goForward()
+                                   }){
+                                       Image(systemName:"chevron.right.circle")
+                                           .resizable()
+                                           .frame(width: 30, height: 30)
+                                   }
+                                  .disabled(!webViewNavigation2.canGoForward)
+                               }.padding()
+                           }
+
+                       })
+                       {
+                          Text("학생복지스토어")
+                              .fontWeight(.bold)
+                               .padding(15)
+                               .background(Color(red: 0.066, green: 0.251, blue: 0.828))
+                               .foregroundColor(Color.white)
+                               .cornerRadius(20)
+                               .font(.system(size: 20))
+                      }
+
+                  }
+
+              }
+
+          }
+
+      }
+
+    
+    
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
+        }
     }
 }

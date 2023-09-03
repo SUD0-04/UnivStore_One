@@ -8,45 +8,56 @@
 import SwiftUI
 import WebKit
 
-struct WebView: UIViewRepresentable {
-    var URLtoLoad: String
-
-    func makeUIView(context: Context) -> WKWebView {
-        guard let url = URL(string: self.URLtoLoad) else {
-            return WKWebView()
-        }
-
-        let webview  = WKWebView()
-        webview.navigationDelegate = context.coordinator // navigationDelegate 설정 추가
-        webview.load(URLRequest(url: url))
-        
-        return webview
-    }
-
-    func updateUIView(_ uiView: WKWebView, context: UIViewRepresentableContext<WebView>) {
-    }
+class WebViewNavigation: NSObject, ObservableObject, WKNavigationDelegate {
+    @Published var canGoBack = false
+    @Published var canGoForward = false
     
-    // Coordinator 추가
-    func makeCoordinator() -> Coordinator {
-         Coordinator(self)
-     }
+    var webView: WKWebView? {
+        didSet {
+            self.webView?.navigationDelegate = self
+        }
+    }
 
-     class Coordinator: NSObject, WKNavigationDelegate {
-         let parent: WebView
-
-         init(_ parent: WebView) {
-             self.parent = parent
-         }
-
-         // 스와이프 제스처에 응답하기 위한 메소드 추가
-         func webView(_ webView: WKWebView, didFinish navigation:
-          WKNavigation!) { webView.allowsBackForwardNavigationGestures = true }
-     }
+   func webView(_ webView: WKWebView, didFinish navigation:
+     WKNavigation!) {
+       canGoBack = webView.canGoBack
+       canGoForward = webView.canGoForward
+   }
 }
+
+struct WebView : UIViewRepresentable {
+
+   @ObservedObject var navigationState = WebViewNavigation()
+
+   let urlToLoad : String
+
+   func makeUIView(context : Context) -> WKWebView{
+       guard let url = URL(string:self.urlToLoad) else{
+           return WKWebView()
+       }
+
+       let webview  = WKWebView()
+       
+       webview.navigationDelegate=self.navigationState // navigationDelegate 설정 추가
+       
+       webview.load(URLRequest(url:url))
+
+       self.navigationState.webView=webview
+
+      return webview
+      
+  }
+
+  func updateUIView(_ uiView : WKWebView, context : Context){
+     // Nothing to do here
+  }
+  
+}
+
 
 
 struct WebView_Previews: PreviewProvider {
     static var previews: some View {
-        WebView(URLtoLoad: "https://www.myunidays.com/KR")
+        WebView(urlToLoad: "https://www.myunidays.com/KR")
     }
 }
