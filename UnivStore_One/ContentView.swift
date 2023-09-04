@@ -46,7 +46,7 @@ struct ContentView: View {
                                     Button(action:{
                                         self.webViewNavigation1.webView?.goBack()
                                     }){
-                                        Image(systemName:"chevron.left.circle")
+                                        Image(systemName:"chevron.backward.circle.fill")
                                             .resizable()
                                             .frame(width: 30, height: 30)
                                      }
@@ -57,7 +57,7 @@ struct ContentView: View {
                                     Button(action:{
                                         self.webViewNavigation1.webView?.goForward()
                                     }){
-                                        Image(systemName:"chevron.right.circle")
+                                        Image(systemName:"chevron.forward.circle.fill")
                                             .resizable()
                                             .frame(width: 30, height: 30)
                                      }
@@ -87,7 +87,7 @@ struct ContentView: View {
                                    Button(action:{
                                        self.webViewNavigation2.webView?.goBack()
                                    }){
-                                       Image(systemName:"chevron.left.circle")
+                                       Image(systemName:"chevron.backward.circle.fill")
                                            .resizable()
                                            .frame(width: 30, height: 30)
                                    }
@@ -98,7 +98,7 @@ struct ContentView: View {
                                    Button(action:{
                                        self.webViewNavigation2.webView?.goForward()
                                    }){
-                                       Image(systemName:"chevron.right.circle")
+                                       Image(systemName:"chevron.forward.circle.fill")
                                            .resizable()
                                            .frame(width: 30, height: 30)
                                    }

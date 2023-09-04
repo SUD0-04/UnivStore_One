@@ -23,6 +23,9 @@
 		52C25E9D2AA22C2500B052CE /* About_me.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C25E9C2AA22C2500B052CE /* About_me.swift */; };
 		52C25E9E2AA22C2500B052CE /* About_me.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C25E9C2AA22C2500B052CE /* About_me.swift */; };
 		52C25E9F2AA22C2500B052CE /* About_me.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C25E9C2AA22C2500B052CE /* About_me.swift */; };
+		52FE4FF32AA5C09B00B95DB4 /* TrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FE4FF22AA5C09B00B95DB4 /* TrackView.swift */; };
+		52FE4FF42AA5C09B00B95DB4 /* TrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FE4FF22AA5C09B00B95DB4 /* TrackView.swift */; };
+		52FE4FF52AA5C09B00B95DB4 /* TrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FE4FF22AA5C09B00B95DB4 /* TrackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,7 @@
 		52C25E8B2AA22B7C00B052CE /* UnivStore_OneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnivStore_OneUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		52C25E982AA22BB300B052CE /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		52C25E9C2AA22C2500B052CE /* About_me.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About_me.swift; sourceTree = "<group>"; };
+		52FE4FF22AA5C09B00B95DB4 /* TrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,7 @@
 				52C25E982AA22BB300B052CE /* WebView.swift */,
 				52C25E9C2AA22C2500B052CE /* About_me.swift */,
 				528ADDF12AA4AD21002AAEF4 /* Check_about.swift */,
+				52FE4FF22AA5C09B00B95DB4 /* TrackView.swift */,
 				52C25E722AA22B7C00B052CE /* Assets.xcassets */,
 				52C25E742AA22B7C00B052CE /* Preview Content */,
 			);
@@ -276,6 +281,7 @@
 				52C25E9D2AA22C2500B052CE /* About_me.swift in Sources */,
 				528ADDF22AA4AD21002AAEF4 /* Check_about.swift in Sources */,
 				52C25E712AA22B7B00B052CE /* ContentView.swift in Sources */,
+				52FE4FF32AA5C09B00B95DB4 /* TrackView.swift in Sources */,
 				52C25E6F2AA22B7B00B052CE /* UnivStore_OneApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +292,7 @@
 			files = (
 				528ADDF32AA4AD21002AAEF4 /* Check_about.swift in Sources */,
 				52C25E802AA22B7C00B052CE /* UnivStore_OneTests.swift in Sources */,
+				52FE4FF42AA5C09B00B95DB4 /* TrackView.swift in Sources */,
 				52C25E9E2AA22C2500B052CE /* About_me.swift in Sources */,
 				52C25E9A2AA22BB300B052CE /* WebView.swift in Sources */,
 			);
@@ -299,6 +306,7 @@
 				52C25E9F2AA22C2500B052CE /* About_me.swift in Sources */,
 				528ADDF42AA4AD21002AAEF4 /* Check_about.swift in Sources */,
 				52C25E8A2AA22B7C00B052CE /* UnivStore_OneUITests.swift in Sources */,
+				52FE4FF52AA5C09B00B95DB4 /* TrackView.swift in Sources */,
 				52C25E8C2AA22B7C00B052CE /* UnivStore_OneUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
