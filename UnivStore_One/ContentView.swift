@@ -22,7 +22,7 @@ struct ContentView: View {
                         .foregroundColor(Color.white)
                         .cornerRadius(20)
                         .font(.system(size: 12))
-                }.padding(.leading, 240).padding(.bottom, 50)
+                }.padding(.leading, 265).padding(.bottom, 50)
                 
                 Text("새로운 Mac과 iPad를 할인가로 만나보세요")
                 Text("학생통합스토어")
@@ -69,11 +69,12 @@ struct ContentView: View {
                         Text("유니데이즈")
                             .fontWeight(.bold)
                             .padding(15)
+                            .padding(.horizontal)
                             .background(Color(red: 0.066, green: 0.251, blue: 0.828))
                             .foregroundColor(Color.white)
                             .cornerRadius(20)
                             .font(.system(size: 20))
-                    }
+                    }.padding(.bottom, 20)
 
                     NavigationLink(destination:
                         ZStack{
@@ -114,7 +115,7 @@ struct ContentView: View {
                                .foregroundColor(Color.white)
                                .cornerRadius(20)
                                .font(.system(size: 20))
-                      }
+                       }.padding(.bottom, 20)
 
                   }
 
