@@ -45,6 +45,12 @@ struct TrackView: View {
                 .fontWeight(.bold)
                 .font(.system(size: 40))
             
+            Image("Deliver_img")
+                .resizable()
+                .scaledToFit()
+                .frame(height: 200)
+                .padding(.top, 8)
+            
 // 디자인 상의 이유로 제거
 //            Image(systemName:"cart.fill")
 //                .resizable()
@@ -67,7 +73,7 @@ struct TrackView: View {
             Text(trackingInfo ?? "")
                 .multilineTextAlignment(.center)
             
-            Text(" 현재 운송장 조회는 CJ 대한통운만 지원됩니다.")
+            Text(" ⚠️ 현재 운송장 조회는 테스트중입니다.")
                 .padding(.top, 270)
         }.padding()
     }
@@ -83,3 +89,4 @@ struct TrackView_Previews: PreviewProvider {
         TrackView()
     }
 }
+
