@@ -27,7 +27,7 @@ struct Check_about: View {
             Text("전화 및 온라인 지원을 통해 해결해보세요.")
                 .padding(.bottom, 12)
 
-            Image("Question_img")
+            Image("ca_img")
                 .resizable()
                 .scaledToFit()
                 .frame(height: 400)

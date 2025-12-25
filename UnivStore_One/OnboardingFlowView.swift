@@ -4,14 +4,11 @@ struct OnboardingFlowView: View {
     @Environment(\.dismiss) private var dismiss
     @State private var step: Int = 1
 
-    // Called when the user finishes step 2
-    var onFinish: () -> Void
+    // Called when the user finishes step 2, passes Bool indicating Apple product usage
+    var onFinish: (Bool) -> Void
 
     var body: some View {
         content
-            .fullScreenCover(isPresented: .constant(true), content: {
-                content
-            })
     }
 
     @ViewBuilder
@@ -49,34 +46,66 @@ struct OnboardingFlowView: View {
             .padding(.horizontal, 24)
             .multilineTextAlignment(.leading)
 
+            if step == 1 {
+                Image("onb_1")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(maxWidth: 600)
+                    .padding(.horizontal, 24)
+                    .padding(.top, 8)
+            }
+            if step == 2 {
+                Image("onb_2")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(maxWidth: 600)
+                    .padding(.horizontal, 24)
+                    .padding(.top, 8)
+            }
+
             Spacer()
 
             // YES / NO buttons centered at bottom
-            HStack(spacing: 16) {
-                Button(action: { handleAnswer(true) }) {
-                    Text("YES")
-                        .font(.system(size: 18, weight: .bold))
-                        .frame(maxWidth: .infinity)
-                        .padding(.vertical, 14)
-                        .background(Color(red: 0.066, green: 0.251, blue: 0.828))
-                        .foregroundStyle(.white)
-                        .cornerRadius(14)
-                }
-                Button(action: { handleAnswer(false) }) {
-                    Text("NO")
-                        .font(.system(size: 18, weight: .bold))
-                        .frame(maxWidth: .infinity)
-                        .padding(.vertical, 14)
-                        .background(Color(.tertiarySystemBackground))
-                        .foregroundStyle(.primary)
-                        .cornerRadius(14)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 14)
-                                .stroke(Color.secondary.opacity(0.2), lineWidth: 1)
-                        )
+            Group {
+                if step == 1 {
+                    Button(action: { step = 2 }) {
+                        Text("알겠습니다!")
+                            .font(.system(size: 18, weight: .bold))
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 14)
+                            .background(Color(red: 0.478, green: 0.776, blue: 0.564))
+                            .foregroundStyle(.white)
+                            .cornerRadius(14)
+                    }
+                    .padding(.horizontal, 24)
+                } else {
+                    HStack(spacing: 16) {
+                        Button(action: { onFinish(true) }) {
+                            Text("맞아요!")
+                                .font(.system(size: 18, weight: .bold))
+                                .frame(maxWidth: .infinity)
+                                .padding(.vertical, 14)
+                                .background(Color(red: 0.478, green: 0.776, blue: 0.564))
+                                .foregroundStyle(.white)
+                                .cornerRadius(14)
+                        }
+                        Button(action: { onFinish(false) }) {
+                            Text("아니요")
+                                .font(.system(size: 18, weight: .bold))
+                                .frame(maxWidth: .infinity)
+                                .padding(.vertical, 14)
+                                .background(Color(red: 0.90, green: 0.93, blue: 0.90))
+                                .foregroundStyle(.primary)
+                                .cornerRadius(14)
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 14)
+                                        .stroke(Color.secondary.opacity(0.2), lineWidth: 1)
+                                )
+                        }
+                    }
+                    .padding(.horizontal, 24)
                 }
             }
-            .padding(.horizontal, 24)
 
             Spacer().frame(height: 24)
         }
@@ -84,37 +113,27 @@ struct OnboardingFlowView: View {
             LinearGradient(colors: [Color(.systemBackground), Color(.secondarySystemBackground)], startPoint: .top, endPoint: .bottom)
                 .ignoresSafeArea()
         )
-        .animation(.easeInOut(duration: 0.25), value: step)
     }
 
     private var titleForStep: String {
         switch step {
-        case 1: return "초기 설정 1"
-        case 2: return "초기 설정 2"
+        case 1: return "꼭 확인해 주세요!"
+        case 2: return "마지막입니다."
         default: return ""
         }
     }
 
     private var subtitleForStep: String {
         switch step {
-        case 1: return "앱 사용을 위한 기본 설정을 확인합니다."
-        case 2: return "마지막으로 선호도를 선택해 주세요."
+        case 1: return "이 앱은 대학생, 교수 등 교육자에 한하여 사용이 가능합니다."
+        case 2: return "iPhone,iPad,mac과 같은 Apple 제품을 사용하십니까?"
         default: return ""
-        }
-    }
-
-    private func handleAnswer(_ yes: Bool) {
-        if step == 1 {
-            withAnimation { step = 2 }
-        } else {
-            // Finish onboarding
-            onFinish()
         }
     }
 }
 
 struct OnboardingFlowView_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardingFlowView(onFinish: {})
+        OnboardingFlowView(onFinish: { _ in })
     }
 }

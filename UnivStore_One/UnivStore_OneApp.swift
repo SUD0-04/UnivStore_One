@@ -9,9 +9,18 @@ import SwiftUI
 
 @main
 struct UnivStore_OneApp: App {
+    @AppStorage("hasSeenStart") private var hasSeenStart: Bool = false
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Group {
+                if hasSeenStart {
+                    ContentView()
+                } else {
+                    StartView()
+                }
+            }
+            .animation(.default, value: hasSeenStart)
         }
     }
 }

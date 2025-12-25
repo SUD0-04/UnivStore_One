@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		524903772EFCF9E500AB7751 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524903762EFCF9E500AB7751 /* StartView.swift */; };
+		524903782EFCF9E500AB7751 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524903762EFCF9E500AB7751 /* StartView.swift */; };
+		524903792EFCF9E500AB7751 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524903762EFCF9E500AB7751 /* StartView.swift */; };
+		5249037B2EFCFB8F00AB7751 /* OnboardingFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5249037A2EFCFB8F00AB7751 /* OnboardingFlowView.swift */; };
+		5249037C2EFCFB8F00AB7751 /* OnboardingFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5249037A2EFCFB8F00AB7751 /* OnboardingFlowView.swift */; };
+		5249037D2EFCFB8F00AB7751 /* OnboardingFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5249037A2EFCFB8F00AB7751 /* OnboardingFlowView.swift */; };
 		528ADDF22AA4AD21002AAEF4 /* Check_about.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528ADDF12AA4AD21002AAEF4 /* Check_about.swift */; };
 		528ADDF32AA4AD21002AAEF4 /* Check_about.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528ADDF12AA4AD21002AAEF4 /* Check_about.swift */; };
 		528ADDF42AA4AD21002AAEF4 /* Check_about.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528ADDF12AA4AD21002AAEF4 /* Check_about.swift */; };
@@ -46,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		524903762EFCF9E500AB7751 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		5249037A2EFCFB8F00AB7751 /* OnboardingFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFlowView.swift; sourceTree = "<group>"; };
 		528ADDF12AA4AD21002AAEF4 /* Check_about.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Check_about.swift; sourceTree = "<group>"; };
 		52C25E6B2AA22B7B00B052CE /* UnivStore_One.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnivStore_One.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C25E6E2AA22B7B00B052CE /* UnivStore_OneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnivStore_OneApp.swift; sourceTree = "<group>"; };
@@ -118,6 +126,8 @@
 				52FE4FF22AA5C09B00B95DB4 /* TrackView.swift */,
 				52C25E722AA22B7C00B052CE /* Assets.xcassets */,
 				52C25E742AA22B7C00B052CE /* Preview Content */,
+				524903762EFCF9E500AB7751 /* StartView.swift */,
+				5249037A2EFCFB8F00AB7751 /* OnboardingFlowView.swift */,
 			);
 			path = UnivStore_One;
 			sourceTree = "<group>";
@@ -211,7 +221,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 2600;
 				TargetAttributes = {
 					52C25E6A2AA22B7B00B052CE = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -278,11 +288,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				52C25E992AA22BB300B052CE /* WebView.swift in Sources */,
+				5249037D2EFCFB8F00AB7751 /* OnboardingFlowView.swift in Sources */,
 				52C25E9D2AA22C2500B052CE /* About_me.swift in Sources */,
 				528ADDF22AA4AD21002AAEF4 /* Check_about.swift in Sources */,
 				52C25E712AA22B7B00B052CE /* ContentView.swift in Sources */,
 				52FE4FF32AA5C09B00B95DB4 /* TrackView.swift in Sources */,
 				52C25E6F2AA22B7B00B052CE /* UnivStore_OneApp.swift in Sources */,
+				524903782EFCF9E500AB7751 /* StartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +304,9 @@
 			files = (
 				528ADDF32AA4AD21002AAEF4 /* Check_about.swift in Sources */,
 				52C25E802AA22B7C00B052CE /* UnivStore_OneTests.swift in Sources */,
+				5249037C2EFCFB8F00AB7751 /* OnboardingFlowView.swift in Sources */,
 				52FE4FF42AA5C09B00B95DB4 /* TrackView.swift in Sources */,
+				524903792EFCF9E500AB7751 /* StartView.swift in Sources */,
 				52C25E9E2AA22C2500B052CE /* About_me.swift in Sources */,
 				52C25E9A2AA22BB300B052CE /* WebView.swift in Sources */,
 			);
@@ -303,11 +317,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				52C25E9B2AA22BB300B052CE /* WebView.swift in Sources */,
+				5249037B2EFCFB8F00AB7751 /* OnboardingFlowView.swift in Sources */,
 				52C25E9F2AA22C2500B052CE /* About_me.swift in Sources */,
 				528ADDF42AA4AD21002AAEF4 /* Check_about.swift in Sources */,
 				52C25E8A2AA22B7C00B052CE /* UnivStore_OneUITests.swift in Sources */,
 				52FE4FF52AA5C09B00B95DB4 /* TrackView.swift in Sources */,
 				52C25E8C2AA22B7C00B052CE /* UnivStore_OneUITestsLaunchTests.swift in Sources */,
+				524903772EFCF9E500AB7751 /* StartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,8 +377,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 52NJ98457L;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -382,6 +400,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -421,8 +440,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 52NJ98457L;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -435,6 +456,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
@@ -449,7 +471,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"UnivStore_One/Preview Content\"";
-				DEVELOPMENT_TEAM = 52NJ98457L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -478,7 +499,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"UnivStore_One/Preview Content\"";
-				DEVELOPMENT_TEAM = 52NJ98457L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -502,11 +522,9 @@
 		52C25E932AA22B7C00B052CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 52NJ98457L;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
@@ -522,11 +540,9 @@
 		52C25E942AA22B7C00B052CE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 52NJ98457L;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
@@ -542,10 +558,8 @@
 		52C25E962AA22B7C00B052CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 52NJ98457L;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "kr.kngmin.public.UnivStore-OneUITests";
@@ -560,10 +574,8 @@
 		52C25E972AA22B7C00B052CE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 52NJ98457L;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "kr.kngmin.public.UnivStore-OneUITests";

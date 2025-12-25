@@ -10,6 +10,8 @@ import SwiftUI
 struct ContentView: View {
     @ObservedObject var webViewNavigation1 = WebViewNavigation()
     @ObservedObject var webViewNavigation2 = WebViewNavigation()
+    @AppStorage("usesAppleProducts") private var usesAppleProducts: Bool = false
+    @State private var showOnboarding = false
 
     var body: some View {
         NavigationView {
@@ -21,7 +23,7 @@ struct ContentView: View {
                             Text("About")
                                 .fontWeight(.bold)
                                 .padding(10)
-                                .background(Color(red: 0.066, green: 0.251, blue: 0.828))
+                                .background(Color(red: 0.478, green: 0.776, blue: 0.564))
                                 .foregroundColor(Color.white)
                                 .cornerRadius(20)
                                 .font(.system(size: 12))
@@ -46,95 +48,144 @@ struct ContentView: View {
                 
                 Spacer().frame(height: 300)
                 
-                HStack {
-                    NavigationLink(destination:
-                        ZStack{
-                            WebView(navigationState: webViewNavigation1, urlToLoad:"https://www.myunidays.com/KR/ko-KR/account/log-in").edgesIgnoringSafeArea(.all)
-                            
-                            VStack{
-                                Spacer()
+                if usesAppleProducts == false {
+                    VStack(spacing: 12) {
+                        // Only show 학생복지스토어, large and centered
+                        NavigationLink(destination:
+                            ZStack{
+                                WebView(navigationState:self.webViewNavigation2,urlToLoad:"https://www.univstore.com").edgesIgnoringSafeArea(.bottom)
 
-                                HStack{
-                                    Button(action:{
-                                        self.webViewNavigation1.webView?.goBack()
-                                    }){
-                                        Image(systemName:"chevron.backward.circle.fill")
-                                            .resizable()
-                                            .frame(width: 30, height: 30)
-                                     }
-                                     .disabled(!webViewNavigation1.canGoBack)
-
+                                VStack{
                                     Spacer()
 
-                                    Button(action:{
-                                        self.webViewNavigation1.webView?.goForward()
-                                    }){
-                                        Image(systemName:"chevron.forward.circle.fill")
-                                            .resizable()
-                                            .frame(width: 30, height: 30)
-                                     }
-                                     .disabled(!webViewNavigation1.canGoForward)
-                                }.padding()
+                                    HStack{
+                                        Button(action:{
+                                            self.webViewNavigation2.webView?.goBack()
+                                        }){
+                                            Image(systemName:"chevron.backward.circle.fill")
+                                                .resizable()
+                                                .frame(width: 30, height: 30)
+                                        }
+                                        .disabled(!webViewNavigation2.canGoBack)
+
+                                        Spacer()
+
+                                        Button(action:{
+                                            self.webViewNavigation2.webView?.goForward()
+                                        }){
+                                            Image(systemName:"chevron.forward.circle.fill")
+                                                .resizable()
+                                                .frame(width: 30, height: 30)
+                                        }
+                                        .disabled(!webViewNavigation2.canGoForward)
+                                    }.padding()
+                                }
                             }
+                        )
+                        {
+                            Text("학생복지스토어")
+                                .fontWeight(.bold)
+                                .font(.system(size: 24))
+                                .frame(maxWidth: .infinity)
+                                .padding(.vertical, 18)
                         }
-                    )
-                    {
-                        Text("UNIDAYS")
-                            .fontWeight(.bold)
-                            .font(.system(size: 20))
-                            .frame(maxWidth: .infinity)
-                            .padding(.vertical, 12)
+                        .background(Color(red: 0.066, green: 0.251, blue: 0.828))
+                        .foregroundColor(Color.white)
+                        .cornerRadius(20)
                     }
-                    .background(Color(red: 0.066, green: 0.251, blue: 0.828))
-                    .foregroundColor(Color.white)
-                    .cornerRadius(20)
-                    .padding(.bottom, 20)
+                    .padding(.horizontal, 24)
+                } else {
+                    HStack {
+                        NavigationLink(destination:
+                            ZStack{
+                                WebView(navigationState: webViewNavigation1, urlToLoad:"https://www.myunidays.com/KR/ko-KR/account/log-in").edgesIgnoringSafeArea(.all)
+                                
+                                VStack{
+                                    Spacer()
 
-                    NavigationLink(destination:
-                        ZStack{
-                        WebView(navigationState:self.webViewNavigation2,urlToLoad:"https://www.univstore.com").edgesIgnoringSafeArea(.bottom)
+                                    HStack{
+                                        Button(action:{
+                                            self.webViewNavigation1.webView?.goBack()
+                                        }){
+                                            Image(systemName:"chevron.backward.circle.fill")
+                                                .resizable()
+                                                .frame(width: 30, height: 30)
+                                         }
+                                         .disabled(!webViewNavigation1.canGoBack)
 
-                           VStack{
-                               Spacer()
+                                        Spacer()
 
-                               HStack{
-                                   Button(action:{
-                                       self.webViewNavigation2.webView?.goBack()
-                                   }){
-                                       Image(systemName:"chevron.backward.circle.fill")
-                                           .resizable()
-                                           .frame(width: 30, height: 30)
-                                   }
-                                   .disabled(!webViewNavigation2.canGoBack)
+                                        Button(action:{
+                                            self.webViewNavigation1.webView?.goForward()
+                                        }){
+                                            Image(systemName:"chevron.forward.circle.fill")
+                                                .resizable()
+                                                .frame(width: 30, height: 30)
+                                         }
+                                         .disabled(!webViewNavigation1.canGoForward)
+                                    }.padding()
+                                }
+                            }
+                        )
+                        {
+                            Text("UNIDAYS")
+                                .fontWeight(.bold)
+                                .font(.system(size: 20))
+                                .frame(maxWidth: .infinity)
+                                .padding(.vertical, 12)
+                        }
+                        .background(Color(red: 0.066, green: 0.251, blue: 0.828))
+                        .foregroundColor(Color.white)
+                        .cornerRadius(20)
+                        .padding(.bottom, 20)
 
+                        NavigationLink(destination:
+                            ZStack{
+                            WebView(navigationState:self.webViewNavigation2,urlToLoad:"https://www.univstore.com").edgesIgnoringSafeArea(.bottom)
+
+                               VStack{
                                    Spacer()
 
-                                   Button(action:{
-                                       self.webViewNavigation2.webView?.goForward()
-                                   }){
-                                       Image(systemName:"chevron.forward.circle.fill")
-                                           .resizable()
-                                           .frame(width: 30, height: 30)
-                                   }
-                                  .disabled(!webViewNavigation2.canGoForward)
-                               }.padding()
+                                   HStack{
+                                       Button(action:{
+                                           self.webViewNavigation2.webView?.goBack()
+                                       }){
+                                           Image(systemName:"chevron.backward.circle.fill")
+                                               .resizable()
+                                               .frame(width: 30, height: 30)
+                                       }
+                                       .disabled(!webViewNavigation2.canGoBack)
+
+                                       Spacer()
+
+                                       Button(action:{
+                                           self.webViewNavigation2.webView?.goForward()
+                                       }){
+                                           Image(systemName:"chevron.forward.circle.fill")
+                                               .resizable()
+                                               .frame(width: 30, height: 30)
+                                       }
+                                      .disabled(!webViewNavigation2.canGoForward)
+                                   }.padding()
+                               }
+
+                           })
+                           {
+                              Text("학생복지스토어")
+                                  .fontWeight(.bold)
+                                  .font(.system(size: 20))
+                                  .frame(maxWidth: .infinity)
+                                  .padding(.vertical, 12)
                            }
+                           .background(Color(red: 0.066, green: 0.251, blue: 0.828))
+                           .foregroundColor(Color.white)
+                           .cornerRadius(20)
+                           .padding(.bottom, 20)
 
-                       })
-                       {
-                          Text("학생복지스토어")
-                              .fontWeight(.bold)
-                              .font(.system(size: 20))
-                              .frame(maxWidth: .infinity)
-                              .padding(.vertical, 12)
-                       }
-                       .background(Color(red: 0.066, green: 0.251, blue: 0.828))
-                       .foregroundColor(Color.white)
-                       .cornerRadius(20)
-                       .padding(.bottom, 20)
-
-                  }
-                .padding(.horizontal, 24)
+                      }
+                    .padding(.horizontal, 24)
+                }
+                
 
               }
 

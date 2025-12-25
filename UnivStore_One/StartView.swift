@@ -2,7 +2,9 @@ import SwiftUI
 
 struct StartView: View {
     @AppStorage("hasSeenStart") private var hasSeenStart: Bool = false
-    @State private var animate = false
+    @AppStorage("usesAppleProducts") private var usesAppleProducts: Bool = false
+    @State private var appeared = false
+    @State private var showOnboarding = false
 
     var body: some View {
         ZStack {
@@ -13,14 +15,11 @@ struct StartView: View {
                 Spacer()
 
                 VStack(spacing: 8) {
-                    Text("학생통합스토어")
-                        .font(.system(size: 40, weight: .bold))
-                        .scaleEffect(animate ? 1.05 : 1.0)
-                        .animation(.easeInOut(duration: 1).repeatForever(autoreverses: true), value: animate)
-
                     Text("새 학기처럼 설레는 학생 할인")
                         .font(.system(size: 17))
                         .foregroundStyle(.secondary)
+                    Text("학생통합스토어")
+                        .font(.system(size: 50, weight: .bold))
                 }
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 24)
@@ -31,12 +30,10 @@ struct StartView: View {
                     .frame(maxWidth: 280)
                     .padding(.vertical, 8)
                     .opacity(0.95)
-                    .scaleEffect(animate ? 1.03 : 1.0)
-                    .animation(.easeInOut(duration: 1).repeatForever(autoreverses: true), value: animate)
 
                 Spacer()
 
-                Button(action: { hasSeenStart = true }) {
+                Button(action: { showOnboarding = true }) {
                     Text("시작하기")
                         .font(.system(size: 20, weight: .bold))
                         .frame(maxWidth: .infinity)
@@ -54,10 +51,18 @@ struct StartView: View {
 
                 Spacer().frame(height: 24)
             }
+            .opacity(appeared ? 1 : 0)
+            .offset(y: appeared ? 0 : 20)
+
+            .fullScreenCover(isPresented: $showOnboarding) {
+                OnboardingFlowView { usesApple in
+                    usesAppleProducts = usesApple
+                    hasSeenStart = true
+                    showOnboarding = false
+                }
+            }
         }
-        .onAppear {
-            animate = true
-        }
+        .onAppear { withAnimation(.easeOut(duration: 0.5)) { appeared = true } }
     }
 }
 
